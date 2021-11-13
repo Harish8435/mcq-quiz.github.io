@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Titillium+Web&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background: #e2e2e230;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44vh;
+    background: linear-gradient(to right, #6e0a6382, #0f2c41), url(../Images/bg.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* clip-path: polygon(2% 21%, 3% 5%, 89% 5%, 92% 78%, 90% 91%, 9% 95%, 6% 87%); */
+    color: white;
+    font-family: 'Catamaran', sans-serif;
+}
+
+#var-div {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.result-div {
+    font-size: 1.6rem;
+    background-color: #cc4a1e6b;
+}
+
+.quiz-questions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.question-div {
+    width: 96%;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+hr{
+    width: 98vw;
+    color: black;
+}
+
+.question {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.option {
+    font-size: 1.4rem;
+    font-weight: 400;
+    width: 44%;
+    border: 1px solid #0000004f;
+    padding: 2px;
+    cursor: pointer;
+    background-color: #e2e2e230;
+}
+
+.option:hover {
+    border: 1px solid black;
+    background-color: #e2e2e21a;
+}
+
+@media screen and (max-width: 996px) {
+    .question-div {
+        width: 100%;
+    }
+
+    .option {
+        width: 100%;
+    }
+}
+
+.form-check-input:checked {
+    background-color: #000000;
+    border-color: #000000;
+    box-shadow: none;
+}
+
+.form-check-input[type=radio] {
+    border-radius: 40%;
+}
+
+.clear-btn{
+    padding: 0.4rem 1rem;
+}

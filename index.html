@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+
+    <!-- AOS Amnimation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="static/CSS/style.css">
+
+    <!-- jQuery script -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <title>Quiz Site</title>
+</head>
+
+<body>
+    <div class="head-container">
+        <header class="py-3 mx-2">
+            <h1 class="py-3">Web Development Quiz</h1>
+        </header>
+    </div>
+
+    <div class="container my-4 p-3" id="var-div">
+        <label for="s_name">Enter Your Name : </label>
+        <input type="text" id="s_name" size="28" required>
+    </div>
+
+    <section class="quiz-questions container" id="quiz-questions">
+        <div class="question-div">
+            <div class="question my-2">
+                <div>Question 1 : </div>
+                <div>How many colour names are used by the browsers?</div>
+            </div>
+            <form action="#">
+                <label class="option false d-block my-2" id="q1l1" for="q1o1">
+                    <input class="form-check-input mx-2" type="radio" name="q1" id="q1o1">8
+                </label>
+                <label class="option false d-block my-2" id="q1l2" for="q1o2">
+                    <input class="form-check-input mx-2" type="radio" name="q1" id="q1o2">10
+                </label>
+                <label class="option false d-block my-2" id="q1l3" for="q1o3">
+                    <input class="form-check-input mx-2" type="radio" name="q1" id="q1o3">12
+                </label>
+                <label class="option true d-block my-2" id="q1l4" for="q1o4">
+                    <input class="form-check-input mx-2" type="radio" name="q1" id="q1o4">16
+                </label>
+                <input type="reset" class="clear-btn" value="Clear Selection">
+            </form>
+        </div>
+
+        <hr>
+
+        <div class="question-div">
+            <div class="question my-2">
+                <div>Question 2 : </div>
+                <div>What are shared on the Internet and are called as Web pages?</div>
+            </div>
+            <form action="#">
+                <label class="option false d-block my-2" id="q2l1" for="q2o1">
+                    <input class="form-check-input mx-2" type="radio" name="q2" id="q2o1">Programs
+                </label>
+                <label class="option false d-block my-2" id="q2l2" for="q2o2">
+                    <input class="form-check-input mx-2" type="radio" name="q2" id="q2o2">Cables
+                </label>
+                <label class="option true d-block my-2" id="q2l3" for="q2o3">
+                    <input class="form-check-input mx-2" type="radio" name="q2" id="q2o3">Hypertext documents
+                </label>
+                <label class="option false d-block my-2" id="q2l4" for="q2o4">
+                    <input class="form-check-input mx-2" type="radio" name="q2" id="q2o4">None
+                </label>
+                <input type="reset" class="clear-btn" value="Clear Selection">
+            </form>
+        </div>
+
+        <hr>
+
+        <div class="question-div">
+            <div class="question my-2">
+                <div>Question 3 : </div>
+                <div>What is the name of the location address of the hypertext documents?</div>
+            </div>
+            <form action="#">
+                <label class="option true d-block my-2" id="q3l1" for="q3o1">
+                    <input class="form-check-input mx-2" type="radio" name="q3" id="q3o1">Uniform Resource Locator
+                </label>
+                <label class="option false d-block my-2" id="q3l2" for="q3o2">
+                    <input class="form-check-input mx-2" type="radio" name="q3" id="q3o2">Web server
+                </label>
+                <label class="option false d-block my-2" id="q3l3" for="q3o3">
+                    <input class="form-check-input mx-2" type="radio" name="q3" id="q3o3">File
+                </label>
+                <label class="option false d-block my-2" id="q3l4" for="q3o4">
+                    <input class="form-check-input mx-2" type="radio" name="q3" id="q3o4">Web address
+                </label>
+                <input type="reset" class="clear-btn" value="Clear Selection">
+            </form>
+        </div>
+
+        <hr>
+
+        <div class="question-div">
+            <div class="question my-2">
+                <div>Question 4 : </div>
+                <div>Which program is used by web clients to view the web pages?</div>
+            </div>
+            <form action="#">
+                <label class="option true d-block my-2" id="q4l1" for="q4o1">
+                    <input class="form-check-input mx-2" type="radio" name="q4" id="q4o1">Web browser
+                </label>
+                <label class="option false d-block my-2" id="q4l2" for="q4o2">
+                    <input class="form-check-input mx-2" type="radio" name="q4" id="q4o2">Protocol
+                </label>
+                <label class="option false d-block my-2" id="q4l3" for="q4o3">
+                    <input class="form-check-input mx-2" type="radio" name="q4" id="q4o3">Web server
+                </label>
+                <label class="option false d-block my-2" id="q4l4" for="q4o4">
+                    <input class="form-check-input mx-2" type="radio" name="q4" id="q4o4">Search Engine
+                </label>
+                <input type="reset" class="clear-btn" value="Clear Selection">
+            </form>
+        </div>
+
+        <hr>
+
+        <div class="question-div">
+            <div class="question my-2">
+                <div>Question 5 : </div>
+                <div>Web page editors works on a ____ principle.</div>
+            </div>
+            <form action="#">
+                <label class="option false d-block my-2" id="q5l1" for="q5o1">
+                    <input class="form-check-input mx-2" type="radio" name="q5" id="q5o1">WWW
+                </label>
+                <label class="option false d-block my-2" id="q5l2" for="q5o2">
+                    <input class="form-check-input mx-2" type="radio" name="q5" id="q5o2">HTML
+                </label>
+                <label class="option true d-block my-2" id="q5l3" for="q5o3">
+                    <input class="form-check-input mx-2" type="radio" name="q5" id="q5o3">WYSIWYG
+                </label>
+                <label class="option false d-block my-2" id="q5l4" for="q5o4">
+                    <input class="form-check-input mx-2" type="radio" name="q5" id="q5o4">WYGWYSI
+                </label>
+                <input type="reset" class="clear-btn" value="Clear Selection">
+            </form>
+        </div>
+
+        <hr>
+
+        <div class="question-div">
+            <div class="question my-2">
+                <div>Question 6 : </div>
+                <div>Which are used with a tag to modify its function?</div>
+            </div>
+            <form action="#">
+                <label class="option false d-block my-2" id="q6l1" for="q6o1">
+                    <input class="form-check-input mx-2" type="radio" name="q6" id="q6o1">Files
+                </label>
+                <label class="option false d-block my-2" id="q6l2" for="q6o2">
+                    <input class="form-check-input mx-2" type="radio" name="q6" id="q6o2">Functions
+                </label>
+                <label class="option true d-block my-2" id="q6l3" for="q6o3">
+                    <input class="form-check-input mx-2" type="radio" name="q6" id="q6o3">Attributes
+                </label>
+                <label class="option false d-block my-2" id="q6l4" for="q6o4">
+                    <input class="form-check-input mx-2" type="radio" name="q6" id="q6o4">Documents
+                </label>
+                <input type="reset" class="clear-btn" value="Clear Selection">
+            </form>
+        </div>
+
+        <hr>
+
+        <div class="question-div">
+            <div class="question my-2">
+                <div>Question 7 : </div>
+                <div>Which tag is used to identify the keywords describing the site?</div>
+            </div>
+            <form action="#">
+                <label class="option false d-block my-2" id="q7l1" for="q7o1">
+                    <input class="form-check-input mx-2" type="radio" name="q7" id="q7o1">Comment tag
+                </label>
+                <label class="option false d-block my-2" id="q7l2" for="q7o2">
+                    <input class="form-check-input mx-2" type="radio" name="q7" id="q7o2">Title tag
+                </label>
+                <label class="option true d-block my-2" id="q7l3" for="q7o3">
+                    <input class="form-check-input mx-2" type="radio" name="q7" id="q7o3">Meta tag
+                </label>
+                <label class="option false d-block my-2" id="q7l4" for="q7o4">
+                    <input class="form-check-input mx-2" type="radio" name="q7" id="q7o4">Anchor tag
+                </label>
+                <input type="reset" class="clear-btn" value="Clear Selection">
+            </form>
+        </div>
+
+        <hr>
+
+        <div class="question-div">
+            <div class="question my-2">
+                <div>Question 8 : </div>
+                <div>The language that instructs the browser on how to display the hypertext, and adds pictures to the
+                    document is __</div>
+            </div>
+            <form action="#">
+                <label class="option false d-block my-2" id="q8l1" for="q8o1">
+                    <input class="form-check-input mx-2" type="radio" name="q8" id="q8o1">C
+                </label>
+                <label class="option false d-block my-2" id="q8l2" for="q8o2">
+                    <input class="form-check-input mx-2" type="radio" name="q8" id="q8o2">COBOL
+                </label>
+                <label class="option true d-block my-2" id="q8l3" for="q8o3">
+                    <input class="form-check-input mx-2" type="radio" name="q8" id="q8o3">HTML
+                </label>
+                <label class="option false d-block my-2" id="q8l4" for="q8o4">
+                    <input class="form-check-input mx-2" type="radio" name="q8" id="q8o4">BASIC
+                </label>
+                <input type="reset" class="clear-btn" value="Clear Selection">
+            </form>
+        </div>
+
+        <hr>
+
+        <div class="question-div">
+            <div class="question my-2">
+                <div>Question 9 : </div>
+                <div>The ____ attribute is used to identify the values of variables.</div>
+            </div>
+            <form action="#">
+                <label class="option false d-block my-2" id="q9l1" for="q9o1">
+                    <input class="form-check-input mx-2" type="radio" name="q9" id="q9o1">text
+                </label>
+                <label class="option false d-block my-2" id="q9l2" for="q9o2">
+                    <input class="form-check-input mx-2" type="radio" name="q9" id="q9o2">http-equiv
+                </label>
+                <label class="option true d-block my-2" id="q9l3" for="q9o3">
+                    <input class="form-check-input mx-2" type="radio" name="q9" id="q9o3">content
+                </label>
+                <label class="option false d-block my-2" id="q9l4" for="q9o4">
+                    <input class="form-check-input mx-2" type="radio" name="q9" id="q9o4">name
+                </label>
+                <input type="reset" class="clear-btn" value="Clear Selection">
+            </form>
+        </div>
+
+        <hr>
+
+        <div class="question-div">
+            <div class="question my-2">
+                <div>Question 10 : </div>
+                <div>Which tag is used to display text in title bar of a web document?</div>
+            </div>
+            <form action="#">
+                <label class="option false d-block my-2" id="q10l1" for="q10o1">
+                    <input class="form-check-input mx-2" type="radio" name="q10" id="q10o1">Body tag
+                </label>
+                <label class="option false d-block my-2" id="q10l2" for="q10o2">
+                    <input class="form-check-input mx-2" type="radio" name="q10" id="q10o2">Meta tag
+                </label>
+                <label class="option true d-block my-2" id="q10l3" for="q10o3">
+                    <input class="form-check-input mx-2" type="radio" name="q10" id="q10o3">Title tag
+                </label>
+                <label class="option false d-block my-2" id="q10l4" for="q10o4">
+                    <input class="form-check-input mx-2" type="radio" name="q10" id="q10o4">Comment tag
+                </label>
+                <input type="reset" class="clear-btn" value="Clear Selection">
+            </form>
+        </div>
+    </section>
+
+    <div class="text-center">
+        <button type="button" class="btn btn-outline-info shadow-none fw-bold px-4 m-5" onclick="submit_test()">
+            <a class="text-decoration-none text-black" href="#var-div">Submit Test</a></button>
+        <button type="button" class="btn btn-outline-warning shadow-none fw-bold px-4 m-5"
+            onclick="window.location.reload();"><a class="text-decoration-none text-black" href="#var-div">Try Again</a></button>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- AOS Amnimation CSS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="static/JS/app.js"></script>
+</body>
+
+</html>
